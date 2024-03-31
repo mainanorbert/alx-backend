@@ -1,0 +1,5 @@
+# Pagination
+Pagination in programming refers to the practice of dividing a set of results into discrete pages, typically in the context of displaying data on a user interface. It is commonly used when dealing with large datasets that cannot be displayed all at once. For example, consider a website that displays a list of blog posts. Instead of loading and displaying all blog posts at once, which could be overwhelming for the user and slow down the website, the posts are divided into pages. The user can then navigate through the pages to view more posts. Pagination typically involves specifying the number of items to display per page (the "page size") and providing controls for the user to navigate between pages, such as "Next Page" and "Previous Page" buttons. In programming, pagination is often implemented using techniques like SQL's `LIMIT` and `OFFSET` clauses for databases, or by manipulating arrays or lists in memory for other types of data.
+## Resources
+- [REST API Design: Pagination](https://www.moesif.com/blog/technical/api-design/REST-API-Design-Filtering-Sorting-and-Pagination/#pagination)
+- [HATEOAS]()
