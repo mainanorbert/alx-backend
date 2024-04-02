@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""module for LRU Caching"""
+"""module for MRU Caching"""
 
 from base_caching import BaseCaching
 
 
-class LRUCache(BaseCaching):
-    """class LRUCache that inherits
+class MRUCache(BaseCaching):
+    """class MRUCache that inherits
     from BaseCaching and is a
     caching system"""
     def __init__(self):
@@ -15,7 +15,7 @@ class LRUCache(BaseCaching):
     def put(self, key, item):
         if key and item:
             if len(self.cache_data) >= self.MAX_ITEMS:
-                lru_k = self.order.pop(0)
+                lru_k = self.order[-1]
                 del self.cache_data[lru_k]
                 print(f"DISCARD: {lru_k}")
             self.cache_data[key] = item
