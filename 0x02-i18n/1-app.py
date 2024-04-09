@@ -7,6 +7,7 @@ from typing import Any
 
 
 class Config:
+    '''class with locale'''
     LANGUAGES = ['en', 'fr']
 
 
