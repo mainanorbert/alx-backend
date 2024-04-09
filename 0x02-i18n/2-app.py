@@ -4,7 +4,6 @@
 from flask import Flask, render_template, request
 from typing import Any
 from flask_babel import Babel
-from werkzeug.utils import cached_property
 
 
 app = Flask(__name__)
@@ -14,7 +13,7 @@ babel = Babel(app)
 class Config:
     """class with local"""
     LANGUAGES = ['en', 'fr']
-    BABEL_DEFAULT_LOCAL = 'en'
+    BABEL_DEFAULT_LOCALE = 'en'
     BABEL_DEFAULT_TIMEZONE = 'UTC'
 
 
