@@ -17,7 +17,7 @@ babel = Babel(app)
 
 
 @app.route('/')
-def index() -> str:
+def index() -> Any:
     '''defining locale'''
     return render_template('1-index.html')
 
