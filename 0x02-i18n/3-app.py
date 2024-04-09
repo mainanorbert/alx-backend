@@ -29,8 +29,9 @@ def get_locale() -> str:
 @app.route('/')
 def index() -> str:
     """Get locale from request"""
-    return render_template('3-index.html')
+    return render_template('3-index.html',
+                           title=('home_title'), header=('home_header'))
 
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+    app.run(debug=True)
