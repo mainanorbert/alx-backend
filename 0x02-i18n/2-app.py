@@ -26,7 +26,7 @@ def get_locale() -> Any:
 
 
 @app.route('/')
-def index() -> Any:
+def index() -> str:
     """Get locale from request"""
     return render_template('2-index.html')
 
