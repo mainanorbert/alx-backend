@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
+'''python module running flass apo'''
+
 from flask import Flask, render_template
 from typing import Any
+
 
 app = Flask(__name__)
 
