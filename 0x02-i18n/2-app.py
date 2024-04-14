@@ -6,8 +6,8 @@ from typing import Any
 from flask_babel import Babel
 
 
-app = Flask(__name__)
-babel = Babel(app)
+app: Flask = Flask(__name__)
+babel: Babel = Babel(app)
 
 
 class Config:
@@ -33,4 +33,4 @@ def index() -> str:
 
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+    app.run(debug=True)
