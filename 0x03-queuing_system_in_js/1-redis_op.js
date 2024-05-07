@@ -11,12 +11,7 @@ client.on('error', (error)=>{
 });
 
 const setNewSchool= (schoolName, value) =>{
-    client.set(schoolName, value, (error, reply) =>{
-        if (error){
-            console.log(error)
-        }
-        console.log(`Reply: ${reply}`);
-    });
+    client.set(schoolName, value, redis.print)
 
 }
 
